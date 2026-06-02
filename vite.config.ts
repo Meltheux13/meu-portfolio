@@ -8,11 +8,11 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
   nitro: {
-    preset: "vercel",
+    preset: "netlify",
     output: {
-      dir: ".vercel/output",
-      publicDir: ".vercel/output/static",
-      serverDir: ".vercel/output/functions/__server.func",
+      dir: ".netlify/functions-internal",
+      publicDir: "dist",
+      serverDir: ".netlify/functions-internal/server",
     },
   },
   vite: {
